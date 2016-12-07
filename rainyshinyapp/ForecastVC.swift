@@ -11,10 +11,12 @@ import Alamofire
 
 class ForecastVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    //TableView connection, Cell connection handled in WeatherCell.swift
     @IBOutlet weak var tableView: UITableView!
     
     var currentWeather = CurrentWeather()
+    
+    
     //Call the Forecast weather to populate the tableView
     var forecast: Forecast!
     var forecasts = [Forecast]()
@@ -25,6 +27,19 @@ class ForecastVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //Initialize Tableview
         tableView.delegate = self
         tableView.dataSource = self
+        
+        currentWeather = CurrentWeather()
+        
+        let background = CAGradientLayer().indigoGradient()
+        background.frame = self.view.bounds
+        self.view.layer.insertSublayer(background, at: 0)
+        
+        currentWeather.downloadWeatherDetails {
+            self.downloadForecastData {
+                self.tableView.reloadData()
+                print(FORECAST_URL)
+            }
+        }
     }
     
     
@@ -72,5 +87,6 @@ class ForecastVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         
     }
+    
 
 }

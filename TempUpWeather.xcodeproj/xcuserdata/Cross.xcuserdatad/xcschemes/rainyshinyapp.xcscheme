@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3022A2E41D4D15DB004563CF"
-               BuildableName = "rainyshinyapp.app"
-               BlueprintName = "rainyshinyapp"
-               ReferencedContainer = "container:rainyshinyapp.xcodeproj">
+               BuildableName = "TempUpWeather.app"
+               BlueprintName = "TempUpWeather"
+               ReferencedContainer = "container:TempUpWeather.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3022A2E41D4D15DB004563CF"
-            BuildableName = "rainyshinyapp.app"
-            BlueprintName = "rainyshinyapp"
-            ReferencedContainer = "container:rainyshinyapp.xcodeproj">
+            BuildableName = "TempUpWeather.app"
+            BlueprintName = "TempUpWeather"
+            ReferencedContainer = "container:TempUpWeather.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3022A2E41D4D15DB004563CF"
-            BuildableName = "rainyshinyapp.app"
-            BlueprintName = "rainyshinyapp"
-            ReferencedContainer = "container:rainyshinyapp.xcodeproj">
+            BuildableName = "TempUpWeather.app"
+            BlueprintName = "TempUpWeather"
+            ReferencedContainer = "container:TempUpWeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3022A2E41D4D15DB004563CF"
-            BuildableName = "rainyshinyapp.app"
-            BlueprintName = "rainyshinyapp"
-            ReferencedContainer = "container:rainyshinyapp.xcodeproj">
+            BuildableName = "TempUpWeather.app"
+            BlueprintName = "TempUpWeather"
+            ReferencedContainer = "container:TempUpWeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

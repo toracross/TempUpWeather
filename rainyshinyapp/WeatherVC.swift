@@ -32,7 +32,6 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate {
         //GPS Settings for best accuracy.
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
         
         let background = CAGradientLayer().blueGradient()
@@ -56,7 +55,7 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate {
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
             currentWeather.downloadWeatherDetails {
-
+                self.updateMainUI()
             }
         } else {
             locationManager.requestWhenInUseAuthorization()
@@ -73,7 +72,7 @@ class WeatherVC: UIViewController, CLLocationManagerDelegate {
     func updateMainUI() {
         
         dateLbl.text = currentWeather.date
-        currentTempLbl.text = "\(currentWeather.currentTemp)"
+        currentTempLbl.text = "\(currentWeather.currentTemp) °F"
         currentWeatherTypeLbl.text = currentWeather.weatherType
         locationLbl.text = currentWeather.cityName
        

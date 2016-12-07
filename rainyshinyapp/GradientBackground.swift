@@ -22,4 +22,17 @@ extension CAGradientLayer {
         
         return gradientLayer
     }
+    
+    func indigoGradient() -> CAGradientLayer {
+        let topColor = UIColor(red: (232/255.0), green: (234/255.0), blue: (246/255.0), alpha: 0.8) //Lighter Color
+        let bottomColor = UIColor(red: (63/255.0), green: (81/255.0), blue: (181/255.0), alpha: 0.8) //Darker Color
+        
+        let gradientColors: [CGColor] = [topColor.cgColor, bottomColor.cgColor]
+        let gradientLocations: [Float] = [0.0, 1.0]
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.colors = gradientColors
+        gradientLayer.locations = gradientLocations as [NSNumber]?
+        
+        return gradientLayer
+    }
 }

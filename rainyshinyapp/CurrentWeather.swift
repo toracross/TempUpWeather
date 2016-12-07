@@ -75,9 +75,7 @@ class CurrentWeather {
                 //Temperature - Ditto to Weather, but temp is in Kelvin, convert K to F before passing value.
                 if let main = dict["main"] as? Dictionary<String, AnyObject> {
                     if let currentTemperature = main["temp"] as? Double {
-                        let kelvinToFahrenheitPreDivision = (currentTemperature * (9/5) - 469.67)
-                        let kelvintoFahrenheit = Double(round(10 * kelvinToFahrenheitPreDivision/10))
-                        self._currentTemp = kelvintoFahrenheit
+                        self._currentTemp = round(currentTemperature)
                     }
                 }
                 print(self._currentTemp)

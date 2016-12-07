@@ -50,19 +50,11 @@ class Forecast {
         if let temp = weatherDict["temp"] as? Dictionary<String, AnyObject> {
             
             if let min = temp["min"] as? Double {
-                let kelvinToFahrenheitPreDivision = (min * (9/5) - 459.67)
-                
-                let kelvinToFahrenheit = Double(round(10 * kelvinToFahrenheitPreDivision/10))
-                
-                self._lowTemp = "\(kelvinToFahrenheit)"
+                self._lowTemp = "\(round(min))"
             }
             
             if let max = temp ["max"] as? Double {
-                let kelvinToFahrenheitPreDivision = (max * (9/5) - 459.67)
-                
-                let kelvinToFahrenheit = Double(round(10 * kelvinToFahrenheitPreDivision/10))
-                
-                self._highTemp = "\(kelvinToFahrenheit)"
+                self._highTemp = "\(round(max))"
             }
             
         }
