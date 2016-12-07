@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102D1C301DF7D6F900D72DB1 /* ForecastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102D1C2F1DF7D6F900D72DB1 /* ForecastVC.swift */; };
 		10D92EE41DF7BEB700E7325B /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D92EE31DF7BEB700E7325B /* GradientBackground.swift */; };
 		2AAA8781A223498252DA3B40 /* Pods_rainyshinyapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839B1AA1AC90D93A6064F8C8 /* Pods_rainyshinyapp.framework */; };
 		3022A2E91D4D15DB004563CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022A2E81D4D15DB004563CF /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		102D1C2F1DF7D6F900D72DB1 /* ForecastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastVC.swift; sourceTree = "<group>"; };
 		10D92EE31DF7BEB700E7325B /* GradientBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		3022A2E51D4D15DB004563CF /* rainyshinyapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinyapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3022A2E81D4D15DB004563CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				3022A2EA1D4D15DB004563CF /* WeatherVC.swift */,
+				102D1C2F1DF7D6F900D72DB1 /* ForecastVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102D1C301DF7D6F900D72DB1 /* ForecastVC.swift in Sources */,
 				3022A30D1D4D1C47004563CF /* WeatherAPI.swift in Sources */,
 				10D92EE41DF7BEB700E7325B /* GradientBackground.swift in Sources */,
 				3022A2EB1D4D15DB004563CF /* WeatherVC.swift in Sources */,
